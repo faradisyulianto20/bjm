@@ -1,7 +1,7 @@
 # LAPORAN ANALISIS BISNIS & ULASAN PENGGUNA TRIMA+
 **Studi Kasus:** Evaluasi Pengalaman Pengguna & Kepuasan Aplikasi Trima+ (PT Trimegah Sekuritas Indonesia Tbk)  
 **Tujuan Dokumen:** Bahan Analisis Business Case Competition & Rekomendasi Solusi Strategis  
-**Tanggal Pengambilan Data:** 2026-09-25 23:20:20  
+**Tanggal Pengambilan Data:** 2026-09-26 00:43:31  
 **Lingkup Pengambilan Data:** Sampel Publik Google Play Store (hl=id, gl=ID)  
 
 ---
@@ -12,18 +12,18 @@ Tabel berikut memisahkan antara metrik agregat Google Play Store dengan review b
 
 | Indikator Metrik | Nilai Temuan | Keterangan & Konteks Bisnis |
 | :--- | :--- | :--- |
-| **Total Rating Google Play** | **3,747 rating** | Angka publik yang ditampilkan toko aplikasi |
-| **Total Ulasan Ditampilkan Play Store** | **1,775 ulasan** | Estimasi total ulasan (termasuk tanpa teks) |
+| **Total Rating Google Play** | **2,171 rating** | Angka publik yang ditampilkan toko aplikasi |
+| **Total Ulasan Ditampilkan Play Store** | **1,956 ulasan** | Estimasi total ulasan (termasuk tanpa teks) |
 | **Sampel Review Bertulis Dianalisis (N)** | **1,312 ulasan** | Seluruh ulasan publik dengan teks yang dapat ditarik |
-| **Rata-rata Rating Resmi Play Store** | **3.12 / 5.0** | Rating rata-rata kumulatif aplikasi |
-| **Rata-rata Rating Review Bertulis** | **3.68 / 5.0** | Rata-rata dari pengguna yang bersedia menulis feedback |
+| **Rata-rata Rating Resmi Play Store** | **4.61 / 5.0** | Rating rata-rata kumulatif aplikasi |
+| **Rata-rata Rating Review Bertulis** | **4.53 / 5.0** | Rata-rata dari pengguna yang bersedia menulis feedback |
 | **Median Rating** | **5.0 / 5.0** | Nilai tengah distribusi kepuasan |
-| **Skor Normalisasi (0.00 – 1.00)** | **0.6709** | Rumus: `(stars - 1) / 4` |
-| **Skor Normalisasi (0 – 100)** | **67.1 / 100** | Rumus: `(stars - 1) * 25` |
-| **Positive Share (Bintang 4–5)** | **62.9% (825 ulasan)** | Basis pengguna loyal & puas |
-| **Neutral Share (Bintang 3)** | **8.8% (115 ulasan)** | Pengguna yang menghadapi friksi minor |
-| **Negative Share (Bintang 1–2)** | **28.4% (372 ulasan)** | **Area friksi kritis yang membutuhkan intervensi bisnis** |
-| **Developer Response Rate** | **48.0%** | Tingkat keterlibatan CS pengembang dalam membalas |
+| **Skor Normalisasi (0.00 – 1.00)** | **0.8813** | Rumus: `(stars - 1) / 4` |
+| **Skor Normalisasi (0 – 100)** | **88.1 / 100** | Rumus: `(stars - 1) * 25` |
+| **Positive Share (Bintang 4–5)** | **87.1% (1,143 ulasan)** | Basis pengguna loyal & puas |
+| **Neutral Share (Bintang 3)** | **1.9% (25 ulasan)** | Pengguna yang menghadapi friksi minor |
+| **Negative Share (Bintang 1–2)** | **11.0% (144 ulasan)** | **Area friksi kritis yang membutuhkan intervensi bisnis** |
+| **Developer Response Rate** | **2.7%** | Tingkat keterlibatan CS pengembang dalam membalas |
 
 ---
 
@@ -33,27 +33,27 @@ Sesuai metodologi yang tepat: **Distribusi asli bintang 5 tetap dipertahankan se
 
 | Bintang Asli | Jumlah Ulasan | Persentase | Skor Normalisasi (0–1) | Skor Normalisasi (0–100) | Kategori Sentimen |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| ⭐ 5 | 726 | 55.3% | 1.00 | 100.0 | Positif Kuat |
-| ⭐ 4 | 99 | 7.5% | 0.75 | 75.0 | Positif |
-| ⭐ 3 | 115 | 8.8% | 0.50 | 50.0 | Netral / Friksi Ringan |
-| ⭐ 2 | 90 | 6.9% | 0.25 | 25.0 | Negatif Ringan |
-| ⭐ 1 | 282 | 21.5% | 0.00 | 0.0 | **Negatif Berat / Churn Risk** |
+| ⭐ 5 | 1,124 | 85.7% | 1.00 | 100.0 | Positif Kuat |
+| ⭐ 4 | 19 | 1.4% | 0.75 | 75.0 | Positif |
+| ⭐ 3 | 25 | 1.9% | 0.50 | 50.0 | Netral / Friksi Ringan |
+| ⭐ 2 | 22 | 1.7% | 0.25 | 25.0 | Negatif Ringan |
+| ⭐ 1 | 122 | 9.3% | 0.00 | 0.0 | **Negatif Berat / Churn Risk** |
 
 ### Temuan Kritis Distribusi:
-- Terdapat **polarisasi berbentuk bimodal** (bintang 5 tinggi, namun bintang 1 juga signifikan mencapai 21.5%).
+- Terdapat **polarisasi berbentuk bimodal** (bintang 5 tinggi, namun bintang 1 juga signifikan mencapai 9.3%).
 - Ini menunjukkan bahwa aplikasi Trima+ memiliki basis pengguna setia yang menyukai fitur riset dan kestabilan regulernya, **tetapi pengguna yang mengalami isu teknis langsung mengalami kegagalan fatal** (churn/drop-off), bukan sekadar penurunan kepuasan minor.
 
 ---
 
 ## 3. Analisis Masalah Utama (Root Cause Ulasan Negatif Bintang 1–2)
 
-Dari total **372 ulasan negatif**, berikut adalah kluster masalah utama yang dihadapi pengguna:
+Dari total **144 ulasan negatif**, berikut adalah kluster masalah utama yang dihadapi pengguna:
 
-1. **Keluhan Umum Aplikasi**: 121 keluhan (32.5% dari ulasan negatif)
-2. **Login & Autentikasi**: 98 keluhan (26.3% dari ulasan negatif)
-3. **UI/UX & Performa (Loading/Navigasi)**: 58 keluhan (15.6% dari ulasan negatif)
-4. **Transaksi & Portofolio Saham**: 34 keluhan (9.1% dari ulasan negatif)
-5. **Stabilitas Sistem & Bug (Crash/Error)**: 22 keluhan (5.9% dari ulasan negatif)
+1. **Login & Autentikasi**: 42 keluhan (29.2% dari ulasan negatif)
+2. **Transaksi & Portofolio Saham**: 37 keluhan (25.7% dari ulasan negatif)
+3. **Keluhan Umum Aplikasi**: 23 keluhan (16.0% dari ulasan negatif)
+4. **Stabilitas Sistem & Bug (Crash/Error)**: 12 keluhan (8.3% dari ulasan negatif)
+5. **UI/UX & Performa (Loading/Navigasi)**: 10 keluhan (6.9% dari ulasan negatif)
 
 ### Analisis Mendalam Per Topik:
 1. **Login & Autentikasi**:
@@ -95,6 +95,6 @@ Berdasarkan temuan data review di atas, rekomendasi bisnis yang dapat diajukan k
 Untuk menjaga integritas ilmiah dan nilai akademis di hadapan dewan juri lomba, sertakan klausul batasan berikut dalam laporan:
 
 1. **Sumber Data:** Data bersumber dari ulasan publik yang terlihat di Google Play Store (hl=id, gl=ID) pada tanggal pengambilan data.
-2. **Representasi Sampel:** Analisis dilakukan terhadap **1,312 ulasan bertulis yang tersedia**, bukan terhadap seluruh 3,747 rating (karena sebagian besar rating diberikan pengguna tanpa menuliskan teks penjelasan).
+2. **Representasi Sampel:** Analisis dilakukan terhadap **1,312 ulasan bertulis yang tersedia**, bukan terhadap seluruh 2,171 rating (karena sebagian besar rating diberikan pengguna tanpa menuliskan teks penjelasan).
 3. **Data Privacy by Design:** Demi mematuhi etika riset bisnis dan regulasi pelindungan data pribadi (UU PDP No. 27/2022), seluruh identitas pengguna (nama, foto profil, user ID) tidak diekstrak atau diikutsertakan dalam pemrosesan data.
 4. **Potensi Seleksi Diri (Self-Selection Bias):** Ulasan publik di Play Store cenderung mencerminkan dua kutub ekstrem (pengguna yang sangat puas atau nasabah yang sangat kecewa ketika terjadi kendala teknis).
