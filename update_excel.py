@@ -28,7 +28,7 @@ topics_map = {
 with pd.ExcelWriter(excel_path, engine="openpyxl", mode="a", if_sheet_exists="replace") as writer:
     for sheet_name, topic_val in topics_map.items():
         sub_df = df[df['primary_topic'] == topic_val][cols_export].copy()
-        sub_df.sort_values(by="stars", ascending=True, inplace=True)
+        sub_df.sort_values(by="review_date", ascending=False, inplace=True)
         sub_df.to_excel(writer, sheet_name=sheet_name, index=False)
         print(f"[+] Sheet '{sheet_name}' ({len(sub_df)} baris) berhasil disimpan.")
 

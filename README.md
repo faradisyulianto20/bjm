@@ -29,11 +29,14 @@ Proyek ini mengintegrasikan seluruh siklus analitika ulasan aplikasi Google Play
 ## 📂 Struktur Berkas
 - `index.html` / `dashboard.html`: Live interactive web dashboard (didukung GitHub Pages).
 - `analisis_ulasan_trima.ipynb`: Jupyter Notebook 33 sel komprehensif.
-- `pipeline.py`: Skrip otomatisasi scraping, cleaning, dan visualisasi.
-- `output/trima_reviews_analysis.xlsx`: Spreadsheet multi-sheet dengan tab per kategori masalah.
-- `output/trima_reviews_clean.csv`: Dataset ulasan bersih siap olah.
-- `output/charts/`: Grafik visualisasi 300 DPI (`rating_distribution.png`, `negative_topic_breakdown.png`, dll.).
-- `output/LAPORAN_ANALISIS_BISNIS_TRIMA.md`: Naskah laporan eksekutif lengkap.
+- `pipeline.py`: Skrip otomatisasi scraping, cleaning, dan visualisasi TRIMA+.
+- `pipeline_stockbit.py`: Skrip benchmarking ulasan terbaru Stockbit (1.312 ulasan terbaru & perbandingan komparatif).
+- `update_excel.py`: Skrip penambahan tab ulasan per topik terurut kronologis terbaru.
+- `output/trima_reviews_clean.csv` & `output/trima_reviews_analysis.xlsx`: Dataset bersih dan Excel multi-sheet TRIMA+.
+- `output/stockbit_reviews_clean.csv` & `output/stockbit_reviews_analysis.xlsx`: Dataset bersih dan Excel multi-sheet ulasan terbaru Stockbit.
+- `output/charts/`: Grafik visualisasi 300 DPI (distribusi bintang, sentimen, topik keluhan, dan komparasi TRIMA vs Stockbit).
+- `output/LAPORAN_ANALISIS_BISNIS_TRIMA.md`: Naskah laporan eksekutif TRIMA+.
+- `output/LAPORAN_ANALISIS_BISNIS_STOCKBIT.md`: Naskah laporan komparasi benchmark TRIMA+ vs Stockbit.
 
 ---
 
